@@ -1,15 +1,4 @@
 #!/usr/bin/env python3
-"""
-training_free.py
-
-Training-free BLIP ITM-based prompt-attention segmentation eval for:
-- PASCAL VOC (21 classes incl. background at index 0)
-- COCO (81 classes incl. background at index 0)
-
-Example:
-  python training_free_blip.py --config configs/pascal_blip.yaml
-  python b.py --config configs/coco_blip.yaml
-"""
 
 from __future__ import annotations
 

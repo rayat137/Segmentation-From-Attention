@@ -1,17 +1,4 @@
 #!/usr/bin/env python3
-"""
-inforscore_blip.py
-
-InfoScore computation for BLIP ITM-based prompt-attention maps for:
-- PASCAL VOC (21 classes incl. background at index 0)
-- COCO (81 classes incl. background at index 0)
-
-InfoScore(layer) = (DatasetEntropy(layer) / MeanImageEntropy(layer)) * CoV(layer)
-
-Example:
-  python inforscore_blip.py --config configs/pascal_blip.yaml
-  python inforscore_blip.py --config configs/coco_blip.yaml
-"""
 
 from __future__ import annotations
 
