@@ -1,8 +1,8 @@
-# Segmentation From Attention: Training-Free Layer Selection and One-Shot Tuning for Segmentation in Vision-Language Models (TMLR 2026, J2C)
+# Segmentation From Attention: Training-Free Layer Selection and One-Shot Tuning for Segmentation in Vision-Language Models (TMLR 2026)
 
 *Mir Rayat Imtiaz Hossain, Mennatullah Siam, Leonid Sigal, James J. Little*
 
-This repository contains source code for our **TMLR 2026 (Journal-to-Conference / J2C)** paper titled, [Segmentation From Attention: Training-Free Layer Selection and One-Shot Tuning for Segmentation in Vision-Language Models](https://openreview.net/pdf?id=a5lAwubXro).
+This repository contains source code for our **TMLR 2026** paper titled, [Segmentation From Attention: Training-Free Layer Selection and One-Shot Tuning for Segmentation in Vision-Language Models](https://openreview.net/pdf?id=a5lAwubXro).
 
 ---
 
