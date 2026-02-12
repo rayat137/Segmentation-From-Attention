@@ -107,7 +107,7 @@ python training_free_blip.py --config configs/pascal_blip.yaml
 
 ## One-Shot Segmentation
 
-### COCO
+#### COCO
 
 ```bash
 python one_shot_blip.py --config configs/coco_blip_one_shot.yaml --multi_prompt
@@ -121,7 +121,7 @@ python one_shot_blip.py --config configs/coco_blip_one_shot.yaml
 
 ---
 
-### PASCAL VOC
+#### PASCAL VOC
 
 ```bash
 python one_shot_blip.py --config configs/pascal_blip_one_shot.yaml --multi_prompt
@@ -138,13 +138,15 @@ python one_shot_blip.py --config configs/pascal_blip_one_shot.yaml
 
 ## Layer Ranking (InfoScore)
 
-To compute attention layer ordering for COCO-Obj use:
+To compute attention layer ordering:
+
+#### COCO
 
 ```bash
 python compute_infoscore_blip.py --config configs/coco_blip.yaml
 ```
 
-For PASCAL VOC rankings, use:
+#### PASCAL VOC
 
 ```bash
 python compute_infoscore_blip.py --config configs/pascal_blip.yaml
