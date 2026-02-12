@@ -1,0 +1,48 @@
+# Dataset
+data_set: pascal
+data_root: /ubc/cs/research/shield/projects/rayat137/voc2012
+class_name_dir: configs/classes/pascal.json
+
+# Used by MultiClassValData
+oneshot:
+  train_list: /ubc/cs/research/shield/projects/rayat137/voc2012/list/train.txt
+  test_list: /ubc/cs/research/shield/projects/rayat137/voc2012/list/val.txt
+  shot: 1
+  split: 0
+  support_only_one_novel: true
+  use_training_images_for_supports: false
+  num_iterations: 5
+  lr: 0.0002
+  weight_decay: 0.05
+  total_runs: 5
+  batch_gradient_accumulation: 2
+
+# Dataset constants
+dataset:
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+  ignore_label: 255
+
+# Model
+model:
+  name: Salesforce/blip-itm-large-coco
+  image_size: 512
+  layers: [3,0]
+
+# Dataloader
+dataloader:
+  num_workers: 1
+
+# CRF
+crf:
+  iters: 20
+
+# Runtime
+runtime:
+  seed: 124511
+  amp: true
+
+# Output
+output:
+  classwise_csv: New_Results/BLIP_PASCAL_SYNONYM_FT_all_layer.csv
+  summary_csv: New_Results/BLIP_PASCAL_SYNONYM_FT_all_layer_summary.csv

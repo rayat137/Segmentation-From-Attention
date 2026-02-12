@@ -1,0 +1,32 @@
+# Dataset
+data_set: coco
+data_root: /ubc/cs/research/shield/datasets/MSCOCO/coco2014/
+val_list: /ubc/cs/research/shield/projects/rayat137/code/DiaM/lists/coco/val.txt
+class_name_dir: configs/classes/coco.json
+
+dataset:
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+  # IMPORTANT: this must match the class list length you include.
+  num_classes: 81
+  ignore_label: 255
+
+
+model:
+  name: Salesforce/blip-itm-large-coco
+  image_size: 512
+  layers: [0, 3]  # Top-2 layers given by InfoScore
+
+dataloader:
+  batch_size: 1
+  num_workers: 1
+
+crf:
+  iters: 20
+
+runtime:
+  seed: 0
+  amp: true
+
+output:
+  csv: New_Results/blip_coco_top_2_syn.csv

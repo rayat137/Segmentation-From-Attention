@@ -1,0 +1,36 @@
+# Dataset
+data_set: pascal
+data_root: /ubc/cs/research/shield/projects/rayat137/voc2012
+val_list: /ubc/cs/research/shield/projects/rayat137/voc2012/list/val.txt
+class_name_dir: configs/classes/pascal.json
+
+# Dataset constants
+dataset:
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+  num_classes: 21
+  ignore_label: 255
+
+# Model
+model:
+  name: Salesforce/blip-itm-large-coco
+  image_size: 512
+  layers: [0, 3] # Top-2 layers given by InfoScore
+
+# Dataloader
+dataloader:
+  batch_size: 1
+  num_workers: 1
+
+# CRF
+crf:
+  iters: 20
+
+# Runtime
+runtime:
+  seed: 0
+  amp: true
+
+# Output
+output:
+  csv: New_Results/BLIP_PASCAL_top_2.csv
