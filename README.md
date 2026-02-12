@@ -77,7 +77,7 @@ This enables attention extraction required for segmentation.
 
 ## Training-Free Open Vocabulary Segmentation
 
-### COCO
+#### COCO
 
 ```bash
 python training_free_blip.py --config configs/coco_blip.yaml --multi_prompt
@@ -91,7 +91,7 @@ python training_free_blip.py --config configs/coco_blip.yaml
 
 ---
 
-### PASCAL VOC
+#### PASCAL VOC
 
 ```bash
 python training_free_blip.py --config configs/pascal_blip.yaml --multi_prompt
