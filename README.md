@@ -191,5 +191,5 @@ MIT License.
 
 ## Contact
 
-Rayat Hossain  
+Mir Rayat Imtiaz Hossain 
 rayat137@cs.ubc.ca
