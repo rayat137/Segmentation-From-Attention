@@ -28,7 +28,7 @@ You can download the dataset from [here](https://etsmtl365-my.sharepoint.com/per
 The data folder should look like this:
 
 ```
-data
+dataset
 ├── coco
 │   ├── annotations
 │   ├── train
@@ -42,7 +42,7 @@ data
 
 #### The train/val split
 
-The train/val split can be found in the diectory `data/lists/`. The list is borrowed from from https://github.com/Jia-Research-Lab/PFENet.
+The train/val split can be found in the diectory `dataset/lists/`. The list is borrowed from from https://github.com/Jia-Research-Lab/PFENet.
 
 ---
 
