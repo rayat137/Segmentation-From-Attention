@@ -42,7 +42,7 @@ data
 
 #### The train/val split
 
-The train/val split can be found in the diectory `src/lists/`. The list is borrowed from from https://github.com/Jia-Research-Lab/PFENet.
+The train/val split can be found in the diectory `data/lists/`. The list is borrowed from from https://github.com/Jia-Research-Lab/PFENet.
 
 ---
 
