@@ -21,6 +21,29 @@ The code supports:
 
 and evaluates both **single-prompt** and **multi-prompt** settings.
 
+## Dataset
+
+You can download the dataset from [here](https://etsmtl365-my.sharepoint.com/personal/seyed-mohammadsina_hajimiri_1_ens_etsmtl_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fseyed%2Dmohammadsina%5Fhajimiri%5F1%5Fens%5Fetsmtl%5Fca%2FDocuments%2FDIaM%2Fdatasets%2Ezip&parent=%2Fpersonal%2Fseyed%2Dmohammadsina%5Fhajimiri%5F1%5Fens%5Fetsmtl%5Fca%2FDocuments%2FDIaM&ga=1) provided by [DIaM](https://github.com/sinahmr/DIaM).
+
+The data folder should look like this:
+
+```
+data
+├── coco
+│   ├── annotations
+│   ├── train
+│   ├── train2014
+│   ├── val
+│   └── val2014
+└── pascal
+|   ├── JPEGImages
+|   └── SegmentationClassAug
+```
+
+#### The train/val split
+
+The train/val split can be found in the diectory `src/lists/`. The list is borrowed from from https://github.com/Jia-Research-Lab/PFENet.
+
 ---
 
 ## Installation
